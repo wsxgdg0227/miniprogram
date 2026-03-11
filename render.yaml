@@ -9,6 +9,8 @@ services:
       mountPath: /data
       sizeGB: 1
     envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
       - key: DB_URL
         value: sqlite:////data/cpp_template.db
       - key: CPP_API_KEY
