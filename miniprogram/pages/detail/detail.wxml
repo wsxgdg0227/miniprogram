@@ -1,0 +1,30 @@
+<view class="container">
+  <view class="title">{{title}}</view>
+  <view class="meta">{{category}} · {{createdAt}}</view>
+
+  <view class="section-title">源码</view>
+
+  <block wx:if="{{useTowxml}}">
+    <import src="../../towxml/towxml.wxml" />
+    <template is="towxml" data="{{...article}}" />
+  </block>
+
+  <block wx:else>
+    <scroll-view scroll-x="true" class="editor-scroll">
+      <view class="editor">
+        <view class="editor-bar">
+          <view class="dot red"></view>
+          <view class="dot yellow"></view>
+          <view class="dot green"></view>
+          <text class="lang">C++</text>
+        </view>
+        <view class="editor-body">
+          <view class="line" wx:for="{{codeLines}}" wx:key="no">
+            <text class="line-no">{{item.no}}</text>
+            <text class="line-text">{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </block>
+</view>

@@ -1,0 +1,96 @@
+.container {
+  min-height: 100vh;
+  padding: 24rpx;
+  background: #0b1220;
+}
+
+.title {
+  font-size: 36rpx;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.meta {
+  color: #94a3b8;
+  margin: 8rpx 0 20rpx;
+}
+
+.section-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  margin-bottom: 12rpx;
+  color: #cbd5e1;
+}
+
+.editor-scroll {
+  border-radius: 12rpx;
+  white-space: nowrap;
+}
+
+.editor {
+  border: 1rpx solid #1f2937;
+  border-radius: 12rpx;
+  overflow: hidden;
+}
+
+.editor-bar {
+  display: flex;
+  align-items: center;
+  gap: 10rpx;
+  height: 56rpx;
+  padding: 0 16rpx;
+  background: #111827;
+  border-bottom: 1rpx solid #1f2937;
+}
+
+.dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+}
+
+.red {
+  background: #ef4444;
+}
+
+.yellow {
+  background: #f59e0b;
+}
+
+.green {
+  background: #22c55e;
+}
+
+.lang {
+  margin-left: 8rpx;
+  color: #93c5fd;
+  font-size: 22rpx;
+}
+
+.editor-body {
+  background: #0f172a;
+  padding: 12rpx 0;
+}
+
+.line {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rpx 12rpx;
+}
+
+.line-no {
+  width: 60rpx;
+  text-align: right;
+  margin-right: 16rpx;
+  font-family: Consolas, "Courier New", monospace;
+  color: #64748b;
+  font-size: 22rpx;
+}
+
+.line-text {
+  flex: 1;
+  font-family: Consolas, "Courier New", monospace;
+  color: #e2e8f0;
+  font-size: 24rpx;
+  white-space: pre;
+}
